@@ -10,10 +10,10 @@ const Projects = () => {
     <Container>
       <Center
         onMouseMove={(e: any) => {
-          /*console.log(
+          console.log(
             `offsetX : ${e.nativeEvent.offsetX}  offsetY: ${e.nativeEvent.offsetY}`
           );
-          */
+
           setMousePosition({
             x: e.nativeEvent.offsetX,
             y: e.nativeEvent.offsetY,
@@ -21,11 +21,11 @@ const Projects = () => {
         }}
         rounded="lg"
         marginTop={10}
-        h={40}
-        w={40}
+        h="58px"
+        w="66px"
         bg="gray.200"
       >
-        {mousePosition.x > 100 ? (
+        {mousePosition.x >= 33 ? (
           <Image src={catImage} width={50} height={50} />
         ) : (
           <Image src={catInvertedImage} width={50} height={50} />

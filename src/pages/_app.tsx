@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import React from "react";
 import type { AppProps } from "next/app";
-import theme from "../themes/theme";
+import theme from "../lib/theme";
 import {
   ChakraProvider,
   ThemeProvider,
